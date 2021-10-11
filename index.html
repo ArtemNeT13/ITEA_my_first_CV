@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ермачёнок Артём</title>
+
+    <style>
+
+        html, body, p{
+            padding: 0;
+            margin: 0;
+        }
+
+        .new-font{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 21px;
+        }
+
+        h1{
+            font-size: 47px;
+            margin-top: -50px;
+        }
+        h2{
+            color: black;
+            margin: 0px;
+            margin-bottom: 21px;
+            font-size: 34px;
+        }
+
+        .bold-text{
+            font-weight: bold;
+        }
+
+        .cyan-text{
+            color:#00ecbb;
+        }
+
+        .white-text{
+            color: white;
+        }
+
+        .grey-text{
+            color: #433a5e;
+        }
+
+        .purple{
+           background: linear-gradient(0deg, #6a13eb 52%, blue);
+        }
+        
+        .block1{
+            width: 980px;
+            margin: auto;
+            padding: 50px 0px;
+        }
+
+        .block1.no-padding-top{
+            padding-top: 0;
+        }
+
+        .nav{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            font-size: 17px;
+        }
+
+        .exp{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+        
+        .exp li{
+            margin: 13px 0;
+        }
+        .nav li{
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .nav li a{
+            text-decoration: none;
+            color: #00ecbb;
+        }
+
+        .achievemnts{
+          list-style: none;
+          padding: 0;
+          margin: 20px 0;
+          margin-top: 40px;
+        }
+
+        .achievemnts li{
+            background: url(./img/icon-ok-2.png) no-repeat left center;
+            padding-left: 70px;
+            margin: 25px 0;
+            line-height: 40px;
+            
+        }
+
+        .str-point{
+          list-style: none;
+          padding: 0;
+          margin-bottom: 20px;
+          margin-top: 34px;
+          column-count: 2;
+
+        }
+
+        .str-point li{
+            background: url(./img/icon-ok.png) no-repeat left center;
+            padding-left: 70px;
+            margin: 34px 0;
+            margin-top: 0;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            padding-left: 80px;
+        }
+
+        .logo-img{
+            width: 980px;
+        }
+
+        .name-tag{
+            font-size: 26px;
+            letter-spacing: 7px;
+        }
+
+        .paragraph{
+            margin: 15px 0;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        .block-marg{
+            margin-bottom: 34px;
+        }
+
+        .credo-bg{
+            background-image: url("./img/credo.jpg");
+            background-position: center;
+            background-size: cover;
+            padding-bottom: 30px;
+            font-size: 21px;
+        }
+
+        .circle-img{
+            border-radius: 50%;
+        }
+
+        .img-flex{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 55px;
+        }
+
+        #contact-form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+        }
+
+        #contact-form input, #contact-form textarea{
+            padding: 20px;
+            margin-bottom: 34px;
+            font-size: 21px;
+            font-weight: bold;
+            outline: none;
+            width: 100%;
+            border: none;
+            border: 3px solid #00ecbb;
+            box-sizing: border-box;
+            
+        }
+
+        textarea{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 144px;
+        }
+        
+        input#submin {
+            width: 377px;
+            height: 86px;
+            cursor: pointer;
+            background: #00ecbb;
+            color: #6a13eb;
+            font-size: 34px;
+
+        }
+
+/*         #button-gotop{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #00ecbb;
+            width: 86px;
+            height: 86px;
+        } */
+
+        #button-gotop{
+            text-decoration: none;
+            display: inline-block;
+            width: 86px;
+            height: 86px;
+            background-color: #00ecbb;
+            color: #6a13eb;
+            font-size: 50px;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 12px;
+            position: fixed;
+            bottom: 84px;
+            right: 30px;
+
+
+        }
+
+        .logo-conteiner{
+            width: 980px;
+            height: 588px;
+            background-image: url(./img/Bitmap.jpg);
+            background-size: cover;
+            box-shadow: 0px -150px 50px 0px rgba(0,0,0,0.8) inset;
+        }
+
+        .text-overlap{
+            position: relative;
+            margin: 0;
+            padding: 0px 34px;
+            top: -134px;
+            text-align: justify;
+    
+           
+        }
+    </style>
+
+</head>
+<body class="grey-text new-font">
+<div>
+    <div class="purple">
+        <div class="block1" id="gotop">
+            <ul class="cyan-text nav" style="padding-top: 20px;">
+                <li><span class="bold-text cyan-text name-tag">ЕРМАЧЁНОК <br>АРТЁМ</span></li>
+                <li><a href="#experience">Опыт работы</a></li>
+                <li><a href="#achievemnts">Достижения</a></li>
+                <li><a href="#strong">Сильные стороны</a></li>
+                <li><a href="#private">Личное</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+
+            <!-- <img class="logo-img" src="./img/Bitmap.jpg" alt="Портрет"> -->
+
+            <div class="logo-conteiner"></div>
+            <p class="white-text paragraph text-overlap">Сейчас работаю инженером видео монтажа. 
+                В 2020 году я понял, что хочу сменить профессию. 
+                Решил поступить в IT. Из всех областей ИТ я выбрал для изучения FrontEnd, 
+                потому что в процессе разработки присутствует не только код, но и визуальная составляющая. 
+                Сейчас занимаюсь самообразованием, участвую в различных мастер-классах. 
+                В ближайшее время собираюсь изучить JS и React. 
+            </p>
+            
+            <h1 class="white-text">Front-End Developer</h1>
+        </div>
+    </div>
+     
+    
+    <div class="block1 block-marg" id="experience">
+        <h2>Опыт работы</h2>
+
+        <ol class="exp">
+            <li><span class="bold-text">окт.2005г. – сент.2006г.</span> Ассистент режиссёра</li>
+            <li><span class="bold-text">сент.2006г. – дек.2018г.</span> Выпускающий эфирного отдела</li>
+            <li><span class="bold-text">янв.2019г. – настоящее время</span> Инженер видеомонтажа </li> 
+        </ol>
+    </div>
+
+
+    <div class="block1 no-padding-top" id="achievemnts">
+        <h2>Мои достижения</h2>
+        <p>
+            Главные профессиональные достижения за последние годи:
+        </p>
+
+        <ul class="achievemnts">
+            <li><span class="bold-text">За пол года смог выучиться монтажу видео</span><br>Благодаря трудолюбию и ответственности смог выполнять трудные задачи</li>
+            <li><span class="bold-text">Самостояятельно приступил к обучению HTML/CSS</span><br>Максимально погружаюсь в теорию</li>
+            <li><span class="bold-text">Уаствую в практикуме от ITEA</span><br>Считаю практику важнее теории, поэтому я за любой движ</li>
+        </ul>
+    </div>
+
+
+    <div class="block1 no-padding-top" id="strong">
+        <h2>Мои сильные стороны</h2>
+
+        <ul class="str-point">
+            <li>Целеустремленный</li>
+            <li>Легко обучаемый</li>
+            <li>Стрессоустойчивый</li>
+            <li>Коммуникабельный</li>
+            <li>Умный</li>
+            <li>Самокритичен</li>
+        </ul>
+    </div>
+
+    
+    <div class="credo-bg" id="deviz">
+        <div class="block1 whith-text">
+            <h2 class="white-text">Мой принцип работы</h2>
+            <p class="white-text">Нет предела совершенству, но надо знать когда остановиться))</p>   
+        </div>
+    </div>
+
+
+    <div class="block1" id="private">
+      
+        <h2>Личное</h2>
+        <p class="paragraph">
+            Люблю плавание, велосипед, походы, люблю готовить 
+            (особенно вкусный кофе), увлекаюсь аквариумистикой, в свободное время
+            смотрю интересные сериалы и фильмы (фантастика, комедия, 
+            иногда триллер) или научные передачи Discovery.
+        </p>
+        <div class="img-flex">
+            <img class="circle-img" src="./img/fitnes.jpg" alt="картинка 1">
+            <img class="circle-img" src="./img/aquarium.jpg" alt="картинка 2">
+            <img class="circle-img" src="./img/travel.jpg" alt="картинка 3">
+        </div>
+    </div>
+ 
+
+    <div class="block1 no-padding-top" id="contact">
+        <h2>Контакт</h2>
+        <form action="/" method="POST" id="contact-form"> <!-- путь к серверу -->
+            <input type="text" name="FIO" placeholder="ФИО">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Сообщение"></textarea>
+            <input type="submit" name="submit" id="submin" value="Отправить">
+        </form>
+
+<!--         <div id="button-gotop">            
+           <a href="#gotop"><img src="./img/strelka.png"></a>
+        </div> -->
+        <a id="button-gotop" href="#gotop">&#923;</a>
+    </div>
+   
+</div>
+    
+</body>
+</html>
